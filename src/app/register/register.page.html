@@ -1,0 +1,25 @@
+<ion-content>
+
+  <div class="container">
+
+    <h1>Criar Conta</h1>
+
+    <input type="text" placeholder="Nome" [(ngModel)]="nome">
+
+    <input type="email" placeholder="Email" [(ngModel)]="email">
+
+    <input type="password" placeholder="Senha" [(ngModel)]="senha">
+
+    <input type="password" placeholder="Confirmar Senha" [(ngModel)]="confirmarSenha">
+
+    <ion-button expand="block" (click)="cadastrar()">
+      Cadastrar
+    </ion-button>
+
+    <ion-button expand="block" fill="outline" (click)="voltarLogin()">
+      Voltar para Login
+    </ion-button>
+
+  </div>
+
+</ion-content>

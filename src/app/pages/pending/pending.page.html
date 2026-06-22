@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pendências
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <h1>Vacinas Pendentes</h1>
+
+    <div class="pending-card" *ngFor="let crianca of pendencias">
+
+      <h2>
+        👶 {{ crianca.nome }}
+      </h2>
+
+      <p>
+        Sexo: {{ crianca.sexo }}
+      </p>
+
+      <p>
+        Nascimento: {{ crianca.dataNascimento }}
+      </p>
+
+      <p>
+        ⚠️ Necessita atualização da caderneta vacinal
+      </p>
+
+    </div>
+
+    <p class="empty-message" *ngIf="pendencias.length === 0">
+      🎉 Nenhuma criança possui vacinas atrasadas.
+    </p>
+
+  </div>
+
+</ion-content>

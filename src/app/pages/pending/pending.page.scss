@@ -1,0 +1,39 @@
+ion-content {
+  --background: #ABC270;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: #473C33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pending-card {
+  background: white;
+  border-left: 8px solid #FDA769;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+
+.pending-card h2 {
+  color: #473C33;
+  margin-bottom: 10px;
+}
+
+.pending-card p {
+  color: #473C33;
+  margin-top: 8px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #473C33;
+  font-weight: bold;
+  margin-top: 30px;
+}

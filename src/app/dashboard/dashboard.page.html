@@ -1,0 +1,94 @@
+<ion-content>
+
+  <div class="container">
+
+    <h1>ImuniKids</h1>
+
+    <p>Bem-vindo ao painel de vacinação</p>
+
+    <div class="usuario-card">
+
+      <h2>
+        Olá, {{ usuarioNome }} 👋
+      </h2>
+
+      <p>
+        {{ usuarioEmail }}
+      </p>
+
+    </div>
+
+    <div class="resumo-grid">
+
+      <div class="card resumo-card">
+        <h2>👶 Crianças</h2>
+        <p>{{ totalCriancas }}</p>
+      </div>
+
+      <div class="card resumo-card">
+        <h2>⚠️ Vacinas Atrasadas</h2>
+        <p>{{ totalAtrasadas }}</p>
+      </div>
+
+      <div class="card resumo-card">
+        <h2>✅ Vacinação em Dia</h2>
+        <p>{{ totalEmDia }}</p>
+      </div>
+
+      <div class="card resumo-card">
+        <h2>🟡 Necessitam Atenção</h2>
+        <p>{{ totalAtencao }}</p>
+      </div>
+
+      <div class="card resumo-card">
+        <h2>📊 Cobertura Vacinal</h2>
+        <p>{{ coberturaVacinal }}%</p>
+      </div>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card" routerLink="/children">
+        👶
+        <h2>Crianças</h2>
+        <p>Cadastre e atualize os perfis das crianças.</p>
+      </div>
+
+      <div class="card" routerLink="/vaccines">
+        💉
+        <h2>Vacinas</h2>
+        <p>Registre e acompanhe o calendário vacinal.</p>
+      </div>
+
+      <div class="card" routerLink="/pending">
+        ⚠️
+        <h2>Pendências</h2>
+        <p>Identifique vacinas em atraso rapidamente.</p>
+      </div>
+
+      <div class="card" routerLink="/campaigns">
+        📢
+        <h2>Campanhas</h2>
+        <p>Acompanhe campanhas públicas de vacinação.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="logout-container">
+
+    <ion-button color="danger" class="logout-btn" (click)="sair()">
+
+      🚪 Encerrar Sessão
+
+    </ion-button>
+
+  </div>
+
+  <div class="footer">
+    ImuniKids © 2026
+  </div>
+
+</ion-content>

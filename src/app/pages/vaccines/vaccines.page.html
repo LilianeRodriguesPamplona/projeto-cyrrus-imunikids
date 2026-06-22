@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Vacinas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <h1>Calendário Vacinal</h1>
+
+    <select [(ngModel)]="criancaSelecionada" (change)="carregarVacinas()">
+
+      <option value="">
+        Selecione uma criança
+      </option>
+
+      <option *ngFor="let crianca of criancas" [value]="crianca.id">
+
+        {{ crianca.nome }}
+
+      </option>
+
+    </select>
+
+    <input type="text" placeholder="Nome da vacina" [(ngModel)]="nomeVacina">
+
+    <select [(ngModel)]="statusVacina">
+
+      <option value="">
+        Selecione o status
+      </option>
+
+      <option value="Aplicada">
+        ✔ Aplicada
+      </option>
+
+      <option value="Pendente">
+        ⏳ Pendente
+      </option>
+
+    </select>
+
+    <input type="date" [(ngModel)]="dataAplicacao">
+
+    <button (click)="salvarVacina()">
+      Salvar Vacina </button>
+
+
+    <div class="vaccine-card" *ngFor="let vacina of vacinas">
+
+      <h2>
+        💉 {{ vacina.nome }}
+      </h2>
+
+      <p>
+        📅 {{ vacina.dataAplicacao }}
+      </p>
+
+      <p class="aplicada" *ngIf="vacina.status === 'Aplicada'">
+        ✔ Aplicada
+      </p>
+
+      <p class="pendente" *ngIf="vacina.status === 'Pendente'">
+        ⏳ Pendente
+      </p>
+
+      <button class="btn-delete" (click)="removerVacina(vacina)">
+        🗑️ Excluir
+      </button>
+
+
+    </div>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Campanhas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <h1>📢 Campanhas Ativas</h1>
+
+    <div class="campaign-card" *ngFor="let campanha of campanhas">
+
+      <h2>
+        {{ campanha.nome }}
+      </h2>
+
+      <p>
+        📅 {{ campanha.periodo }}
+      </p>
+
+      <p class="ativa">
+        🟢 Campanha Ativa
+      </p>
+
+    </div>
+
+  </div>
+
+</ion-content>

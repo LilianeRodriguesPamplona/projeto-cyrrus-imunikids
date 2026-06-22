@@ -1,0 +1,29 @@
+<ion-content>
+
+  <div class="container">
+
+    <h1>ImuniKids</h1>
+
+    <p>Controle inteligente da vacinação infantil</p>
+
+    <input type="email" placeholder="Email" [(ngModel)]="email">
+
+    <input type="password" placeholder="Senha" [(ngModel)]="senha">
+
+    <ion-button expand="block" (click)="entrar()">
+      Entrar
+    </ion-button>
+
+    <p class="register-text">
+
+      Não possui conta?
+
+    </p>
+
+    <ion-button expand="block" fill="outline" (click)="irParaCadastro()">
+      Criar Conta
+    </ion-button>
+
+  </div>
+
+</ion-content>

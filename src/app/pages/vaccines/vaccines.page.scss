@@ -1,0 +1,59 @@
+ion-content {
+  --background: #ABC270;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.vaccine-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}
+
+.vaccine-card h2 {
+  color: #473C33;
+}
+
+.vaccine-card p {
+  color: #473C33;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.aplicada {
+  color: green;
+  font-weight: bold;
+}
+
+.pendente {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+select {
+width: 100%;
+padding: 14px;
+border-radius: 12px;
+border: none;
+margin-bottom: 20px;
+font-size: 16px;
+}
+
+input,
+select {
+width: 100%;
+padding: 14px;
+border-radius: 12px;
+border: none;
+margin-bottom: 15px;
+font-size: 16px;
+}

@@ -1,0 +1,37 @@
+ion-content {
+  --background: #ABC270;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.campaign-card {
+  background: white;
+  border-left: 6px solid #FDA769;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.campaign-card h2 {
+  color: #473C33;
+  margin-bottom: 12px;
+}
+
+.campaign-card p {
+  color: #473C33;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.ativa {
+  color: green;
+  font-weight: bold;
+}

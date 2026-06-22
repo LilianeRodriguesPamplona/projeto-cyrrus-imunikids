@@ -1,0 +1,91 @@
+ion-content {
+  --background: #ABC270;
+}
+
+.container {
+  padding: 20px;
+}
+
+ion-button {
+  margin-bottom: 15px;
+}
+
+.child-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.child-card h2 {
+  color: #473C33;
+  margin-bottom: 10px;
+}
+
+.child-card p {
+  color: #473C33;
+}
+
+.btn-editar {
+  --background: #FFC107;
+  --color: #473C33;
+
+  --border-radius: 12px;
+
+  height: 42px;
+
+  font-weight: 600;
+
+  margin-right: 8px;
+}
+
+.btn-excluir {
+  --background: #EF5350;
+  --color: white;
+
+  --border-radius: 12px;
+
+  height: 42px;
+
+  font-weight: 600;
+}
+
+.btn-salvar {
+
+  --background: #FDA769;
+  --color: #473C33;
+
+  --border-radius: 14px;
+
+  height: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-cancelar {
+
+  --background: #9E9E9E;
+  --color: white;
+
+  --border-radius: 14px;
+
+  height: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-limpar {
+
+  --background: #EF5350;
+  --color: white;
+
+  --border-radius: 14px;
+
+  height: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+}

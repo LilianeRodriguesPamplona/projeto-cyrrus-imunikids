@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Minhas Crianças</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <h1>Minhas Crianças</h1>
+
+    <input type="text" placeholder="Nome da criança" [(ngModel)]="nome">
+
+    <input type="date" [(ngModel)]="dataNascimento">
+
+    <select [(ngModel)]="sexo">
+      <option value="">Selecione o sexo</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Feminino">Feminino</option>
+    </select>
+
+    <select [(ngModel)]="statusVacinal">
+      <option value="">
+        Selecione a situação vacinal
+      </option>
+
+      <option value="Em dia">
+        🟢 Em dia
+      </option>
+
+      <option value="Atenção">
+        🟡 Atenção
+      </option>
+
+      <option value="Atrasada">
+        🔴 Atrasada
+      </option>
+    </select>
+
+    <ion-button expand="block" class="btn-salvar" (click)="adicionarCrianca()">
+
+      👶 Salvar Criança
+
+    </ion-button>
+
+    <ion-button *ngIf="editandoIndex !== null" expand="block" class="btn-cancelar" (click)="cancelarEdicao()">
+
+      ↩️ Cancelar Edição
+
+    </ion-button>
+
+    <ion-button expand="block" class="btn-limpar" (click)="limparCriancas()">
+
+      🗑️ Limpar Todos os Cadastros
+
+    </ion-button>
+
+    <div class="child-card" *ngFor="let crianca of criancas">
+
+      <h2>{{ crianca.nome }}</h2>
+
+      <p>
+        Sexo: {{ crianca.sexo }}
+      </p>
+
+      <p>
+        Nascimento:
+        {{ formatarData(crianca.dataNascimento) }}
+      </p>
+
+      <p>
+        Idade:
+        {{ calcularIdade(crianca.dataNascimento) }}
+        anos
+      </p>
+
+      <p *ngIf="crianca.statusVacinal === 'Em dia'">
+        Status Vacinal: 🟢 Em dia
+      </p>
+
+      <p *ngIf="crianca.statusVacinal === 'Atenção'">
+        Status Vacinal: 🟡 Atenção
+      </p>
+
+      <p *ngIf="crianca.statusVacinal === 'Atrasada'">
+        Status Vacinal: 🔴 Atrasada
+      </p>
+
+      <ion-button class="btn-editar" fill="solid" size="default" (click)="editarCrianca(crianca)">
+
+        ✏️ Editar
+
+      </ion-button>
+
+      <ion-button class="btn-excluir" fill="solid" size="default" (click)="removerCrianca(crianca)">
+
+        🗑️ Excluir
+
+      </ion-button>
+
+    </div>
+
+  </div>
+
+</ion-content>
