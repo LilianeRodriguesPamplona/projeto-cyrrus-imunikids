@@ -263,8 +263,23 @@ Aplicação hospedada em:
 Link:
 
 ```txt
-ADICIONE_AQUI_O_LINK_PUBLICADO
+https://imunikids-3ba21.web.app
 ```
+
+---
+
+## 🔑 Acesso ao Sistema
+
+A aplicação possui cadastro de usuários integrado ao Firebase Authentication.
+
+Para testar:
+
+1. Clique em "Criar Conta"
+2. Cadastre um novo usuário
+3. Faça login
+4. Utilize todas as funcionalidades do sistema
+
+Não é necessário usuário pré-cadastrado.
 
 ---
 
