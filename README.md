@@ -18,27 +18,27 @@ O objetivo é substituir parcialmente a dependência da carteira física de vaci
 
 ### Dashboard
 
-<img src="./screenshots/dashboard.png" width="800">
+![Dashboard](screenshots/Dashboard.png)
 
 ### Cadastro de Crianças
 
-<img src="./screenshots/criancas.png" width="800">
+![Cadastro de Crianças](screenshots/Criancas.png)
 
 ### Controle Vacinal
 
-<img src="./screenshots/vacinas.png" width="800">
+![Controle Vacinal](screenshots/Vacinas.png)
 
 ### Pendências
 
-<img src="./screenshots/pendencias.png" width="800">
+![Pendências](screenshots/Pendencias.png)
 
 ### Campanhas
 
-<img src="./screenshots/campanhas.png" width="800">
+![Campanhas](screenshots/Campanhas.png)
 
 ### Login
 
-<img src="./screenshots/login.png" width="800">
+![Login](screenshots/Login.png)
 
 ---
 
@@ -252,7 +252,7 @@ src/
 Clone o projeto:
 
 ```bash
-git clone https://github.com/LilianeRodriguesPamplona/projeto-cyrrus-imunikids.git
+git clone URL_DO_REPOSITORIO
 ```
 
 Instale as dependências:
@@ -278,31 +278,13 @@ Aplicação hospedada em:
 Link:
 
 ```txt
-https://imunikids-3ba21.web.app
+ADICIONE_AQUI_O_LINK_PUBLICADO
 ```
 
 ---
 
-## 🔑 Acesso ao Sistema
-
-A aplicação possui cadastro de usuários integrado ao Firebase Authentication.
-
-Para testar:
-
-1. Clique em "Criar Conta"
-2. Cadastre um novo usuário
-3. Faça login
-4. Utilize todas as funcionalidades do sistema
-
-Não é necessário usuário pré-cadastrado.
-
----
-
-# 👩‍💻 Desenvolvedora
+# 👩‍💻 Desenvolvido por
 
 Liliane Rodrigues Pamplona
 
 Desafio Técnico Cyrrus – Estágio Frontend Angular + Ionic
-
-GitHub:
-https://github.com/LilianeRodriguesPamplona
