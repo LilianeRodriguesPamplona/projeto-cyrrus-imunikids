@@ -17,13 +17,28 @@ O objetivo é substituir parcialmente a dependência da carteira física de vaci
 ## 📸 Telas da Aplicação
 
 ### Dashboard
-<img src="LINK_DA_IMAGEM" width="800">
+
+<img src="./screenshots/dashboard.png" width="800">
 
 ### Cadastro de Crianças
-<img src="LINK_DA_IMAGEM" width="800">
+
+<img src="./screenshots/criancas.png" width="800">
 
 ### Controle Vacinal
-<img src="LINK_DA_IMAGEM" width="800">
+
+<img src="./screenshots/vacinas.png" width="800">
+
+### Pendências
+
+<img src="./screenshots/pendencias.png" width="800">
+
+### Campanhas
+
+<img src="./screenshots/campanhas.png" width="800">
+
+### Login
+
+<img src="./screenshots/login.png" width="800">
 
 ---
 
