@@ -252,7 +252,7 @@ src/
 Clone o projeto:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/LilianeRodriguesPamplona/projeto-cyrrus-imunikids.git
 ```
 
 Instale as dependências:
@@ -278,13 +278,31 @@ Aplicação hospedada em:
 Link:
 
 ```txt
-ADICIONE_AQUI_O_LINK_PUBLICADO
+https://imunikids-3ba21.web.app
 ```
 
 ---
 
-# 👩‍💻 Desenvolvido por
+## 🔑 Acesso ao Sistema
+
+A aplicação possui cadastro de usuários integrado ao Firebase Authentication.
+
+Para testar:
+
+1. Clique em "Criar Conta"
+2. Cadastre um novo usuário
+3. Faça login
+4. Utilize todas as funcionalidades do sistema
+
+Não é necessário usuário pré-cadastrado.
+
+---
+
+# 👩‍💻 Desenvolvedora
 
 Liliane Rodrigues Pamplona
 
 Desafio Técnico Cyrrus – Estágio Frontend Angular + Ionic
+
+GitHub:
+https://github.com/LilianeRodriguesPamplona
